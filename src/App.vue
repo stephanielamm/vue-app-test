@@ -33,6 +33,9 @@ data () {
 methods: {
   add () {
     this.total++
+  },
+  clear () {
+    this.$evt.$emit('clear')
   }
 }
 }
