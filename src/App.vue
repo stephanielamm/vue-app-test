@@ -17,6 +17,14 @@ import Counter from './components/Counter'
 // Need to know three component lifecycle events:
 // Created, Mounted, beforeDestroy
 
+// Created is in memory but not on the page yet.
+// Mounted puts it on the page and fires it.
+// In Mounted, we add listeners,
+// set basic properties,
+// initialize new component.
+// beforeDestroy is when it leaves the page
+// This is to remove listeners.
+
 
 // this.$evt.$emit (dispatch custom event)
 // this.$evt.$on (add event listener)
