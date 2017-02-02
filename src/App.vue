@@ -28,7 +28,7 @@ data () {
 
 methods: {
   add () {
-    this.++
+    this.total++
   }
 }
 }
