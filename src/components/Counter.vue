@@ -6,6 +6,17 @@
 
 <script>
 export default {
+
+  mounted ()  {
+    console.log('Counter -> mounted.')
+    // do stuff
+  },
+
+  beforeDestory () {
+      console.log('Counter -> beforeDestory.')
+      // do stuff
+  },
+
   data () {
     return {
       value: 0
