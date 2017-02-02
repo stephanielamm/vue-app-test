@@ -14,6 +14,10 @@
 <script>
 import Counter from './components/Counter'
 
+// this.$evt.$emit (dispatch custom event)
+// this.$evt.$on (add event listener)
+// this.$evt.$off (remove event listener)
+
 export default {
   name: 'app',
   components: {
