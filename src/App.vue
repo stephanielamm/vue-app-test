@@ -1,26 +1,33 @@
 <template>
-  <div class="Counter">
-    <button class="btn" @click="increment">{{ value }}</button>
-  </div>
+
+  <div id="app">
+    <h1>{{ value }}</h1>
+    <Counter></Counter>
+    <Counter></Counter>
+    <Counter></Counter>
+    <Counter></Counter>
+    <Counter></Counter>
+
+</div>
 </template>
 
 <script>
 import Counter from './components/Counter'
 
-
 export default {
-  data () {
-    return {
-      value: 0
-    }
+  name: 'app',
+  components: {
+    Counter
   },
-methods: {
-  increment () {
-    this.value++
+
+data () {
+  return {
+    total: 0
   }
 }
 }
 </script>
+
 
 <style>
 #app {
