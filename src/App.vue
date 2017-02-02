@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div class="Counter">
+    <button class="btn" @click="increment">{{ value }}</button>
   </div>
 </template>
 
@@ -9,10 +9,16 @@ import Counter from './components/Counter'
 
 
 export default {
-  name: 'app',
-  components: {
-    Counter
+  data () {
+    return {
+      value: 0
+    }
+  },
+methods: {
+  increment () {
+    this.value++
   }
+}
 }
 </script>
 
