@@ -14,6 +14,10 @@
 <script>
 import Counter from './components/Counter'
 
+// Need to know three component lifecycle events:
+// Created, Mounted, beforeDestroy
+
+
 // this.$evt.$emit (dispatch custom event)
 // this.$evt.$on (add event listener)
 // this.$evt.$off (remove event listener)
