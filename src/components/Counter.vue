@@ -9,12 +9,11 @@ export default {
 
   mounted ()  {
     console.log('Counter -> mounted.')
-    // do stuff
-  },
+    this.$evt.$on('clear', this.clear)  },
 
   beforeDestory () {
-      console.log('Counter -> beforeDestory.')
-      // do stuff
+    console.log('Counter -> beforeDestory.')
+    this.$evt.$off('clear', this.clear)
   },
 
   data () {
@@ -23,7 +22,11 @@ export default {
     }
   },
 methods: {
+  clear () {
+    console.log('Counter -> clear.')
+  },
   increment () {
+    console.log('Counter -> increment.')
     this.value++
     this.$emit('increment')
   }

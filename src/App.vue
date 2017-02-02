@@ -8,6 +8,8 @@
     <Counter @increment="add"></Counter>
     <Counter @increment="add"></Counter>
     <Counter @increment="add" v-if="false"></Counter>
+    <button @click="showing =  true" >Show It</button>
+      <button @click="showing =  false" >Remove It</button>
 
 </div>
 </template>
