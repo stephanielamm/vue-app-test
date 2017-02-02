@@ -9,7 +9,8 @@ export default {
 
   mounted ()  {
     console.log('Counter -> mounted.')
-    this.$evt.$on('clear', this.clear)  },
+    this.$evt.$on('clear', this.clear)
+  },
 
   beforeDestory () {
     console.log('Counter -> beforeDestory.')
@@ -24,6 +25,7 @@ export default {
 methods: {
   clear () {
     console.log('Counter -> clear.')
+    this.value = 0
   },
   increment () {
     console.log('Counter -> increment.')

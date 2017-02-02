@@ -50,7 +50,8 @@ methods: {
     this.total++
   },
   clear () {
-    this.$evt.$emit('clear')
+    this.$evt.$emit('clear'),
+    this.total = 0
   }
 }
 }
