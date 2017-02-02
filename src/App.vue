@@ -2,11 +2,11 @@
 
   <div id="app">
     <h1>{{ value }}</h1>
-    <Counter></Counter>
-    <Counter></Counter>
-    <Counter></Counter>
-    <Counter></Counter>
-    <Counter></Counter>
+    <Counter @increment="add"></Counter>
+    <Counter @increment="add"></Counter>
+    <Counter @increment="add"></Counter>
+    <Counter @increment="add"></Counter>
+    <Counter @increment="add"></Counter>
 
 </div>
 </template>
@@ -23,6 +23,12 @@ export default {
 data () {
   return {
     total: 0
+  }
+},
+
+methods: {
+  add () {
+    this.++
   }
 }
 }

@@ -17,7 +17,7 @@ export default {
 methods: {
   increment () {
     this.value++
-    this.$emit
+    this.$emit('increment')
   }
 }
 }
