@@ -5,9 +5,6 @@
 </template>
 
 <script>
-import Counter from './components/Counter'
-
-
 export default {
   data () {
     return {
@@ -24,7 +21,7 @@ methods: {
 </script>
 
 <style>
-#app {
+.Counter {
 
 }
 </style>
