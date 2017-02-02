@@ -7,12 +7,12 @@
   export default {
     data () {
       return {
-
+        message: 'my message is here.'
       }
     },
     methods: {
       sayHello () {
-    window.alert('Hello, Stephanie!')
+    this.message= 'changed message.'
       }
     }
   }
