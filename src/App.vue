@@ -7,6 +7,7 @@
     <Counter @increment="add"></Counter>
     <Counter @increment="add"></Counter>
     <Counter @increment="add"></Counter>
+    <Counter @increment="add" v-if="false"></Counter>
 
 </div>
 </template>
